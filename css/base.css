@@ -1,0 +1,240 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'codropsicons';
+    src: url('../fonts/codropsicons/codropsicons.eot');
+    src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+html,
+body,
+.container {
+    height: 100%;
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    font-weight: 400;
+    font-size: 1em;
+    background: #6BC7DE;
+    font-family: 'Raleway', Arial, sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
+    min-height: 590px;
+}
+
+
+/*page stack css*/
+
+.cf:before,
+.cf:after {
+    content: ' ';
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/* Blueprint header */
+
+.bp-header {
+    padding: 6em 10vw 2em;
+}
+
+.bp-header__title {
+    font-size: 2.125em;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.bp-header__desc {
+    font-size: 0.95em;
+    margin: 0.5em 0 1em;
+    padding: 0;
+}
+
+.bp-header__present {
+    font-size: 0.85em;
+    font-weight: 700;
+    position: relative;
+    z-index: 100;
+    display: block;
+    padding: 0 0 0.6em 0.1em;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #5c5edc;
+}
+
+.bp-tooltip:after {
+    font-size: 50%;
+    font-size: 75%;
+    position: relative;
+    top: -8px;
+    left: -12px;
+    width: 30px;
+    height: 30px;
+}
+
+.bp-tooltip:hover:before {
+    content: attr(data-content);
+    font-size: 110%;
+    font-weight: 700;
+    line-height: 1.2;
+    position: absolute;
+    left: auto;
+    margin-left: 4px;
+    padding: 0.8em 1em;
+    text-align: left;
+    text-indent: 0;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #fff;
+    background: #5c5edc;
+}
+
+.bp-nav {
+    margin: 0 0 0 -0.75em;
+}
+
+.bp-nav__item {
+    position: relative;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.1em;
+    text-align: left;
+    border-radius: 50%;
+}
+
+.bp-nav__item>span {
+    display: none;
+}
+
+.bp-nav__item:hover:before {
+    content: attr(data-info);
+    font-size: 0.85em;
+    font-weight: bold;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 600%;
+    text-align: left;
+    pointer-events: none;
+    color: #595a5f;
+}
+
+.bp-nav__item:hover {
+    background: #5c5edc;
+}
+
+.bp-icon:after {
+    font-family: 'bpicons';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    text-transform: none;
+    color: #5c5edc;
+    -webkit-font-smoothing: antialiased;
+    speak: none;
+}
+
+.bp-nav .bp-icon:after {
+    line-height: 2.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: 0;
+}
+
+.bp-nav a:hover:after {
+    color: #fff;
+}
+
+.bp-icon--next:after {
+    content: '\e000';
+}
+
+.bp-icon--drop:after {
+    content: '\e001';
+}
+
+.bp-icon--archive:after {
+    content: '\e002';
+}
+
+.bp-icon--about:after {
+    content: '\e003';
+}
+
+.bp-icon--prev:after {
+    content: '\e004';
+}
+
+@media screen and (max-width: 40em) {
+    .bp-header {
+        padding: 50px 20px 1em;
+    }
+    .bp-header__title {
+        font-size: 1.8em;
+    }
+}
+
+.logo {
+    float: left;
+    margin: 10px 0 0 150px;
+    width: 240px;
+    text-align: center;
+    padding: 40px 10px;
+    font-size: 1.8em;
+    background: #fff;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+    float: right;
+    padding: 2px 20px;
+}
+
+.clearfix {
+    clear: both
+}
+
+.right-align {
+    text-align: right
+}
+
+nav#top-icons ul li {
+    list-style: none;
+    float: left;
+    margin: 3px 9px;
+}
+
+nav#top-icons ul li img,
+img.icon-img {
+    width: 64px;
+}
+
+.float-left {
+    float: left;
+    position: relative;
+    width: 49%;
+}
+
+.float-right {
+    float: right;
+    position: relative;
+    width: 49%;
+}
